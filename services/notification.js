@@ -12,3 +12,8 @@ try {
 } catch (e) {
   console.error(e);
 }
+const response = await fetch(`https://ntfy.sh/${process.env.NTFY_CHANNEL}`, {
+  method: "POST",
+  body: getProblem,
+});
+console.log("Status:", response.status);
