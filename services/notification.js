@@ -11,3 +11,5 @@ import { getProblemOfTheDay, problems, startDate, today } from "../logica.js";
     console.error(e);
   };
 
+console.log("Problema:", getProblem);
+console.log("Canale:", process.env.NTFY_CHANNEL);
